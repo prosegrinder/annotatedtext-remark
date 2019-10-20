@@ -3,10 +3,9 @@
 [![Build Status](https://travis-ci.org/prosegrinder/annotatedtext-remark.svg?branch=master)](https://travis-ci.org/prosegrinder/annotatedtext-remark)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/3aba5f7e370c4ca6973938158b120b26)](https://www.codacy.com/app/ProseGrinder/annotatedtext-remark?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=prosegrinder/annotatedtext-remark&amp;utm_campaign=Badge_Grade)
 
-A lightweight JavaScript library based on [annotatedtext](https://github.com/prosegrinder/annotatedtext) and
-[remark-parse](https://github.com/remarkjs/remark/tree/master/packages/remark-parse) for
-converting markdown documents into an annotated text format consumable by
-LanguageTool as [AnnotatedText](https://languagetool.org/development/api/org/languagetool/markup/AnnotatedText.html).
+A lightweight JavaScript library based on [annotatedtext](https://github.com/prosegrinder/annotatedtext), [remark-parse](https://github.com/remarkjs/remark/tree/master/packages/remark-parse), and [remark-frontmatter](https://github.com/remarkjs/remark-frontmatter) for converting markdown documents into an annotated text format consumable by LanguageTool as [AnnotatedText](https://languagetool.org/development/api/org/languagetool/markup/AnnotatedText.html).
+
+Front matter is now tagged as markup.
 
 ## Usage
 
