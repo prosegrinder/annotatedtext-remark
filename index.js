@@ -3,7 +3,7 @@
 var annotatedtext = require("annotatedtext");
 var unified = require("unified");
 var remarkparse = require("remark-parse");
-var frontmatter = require('remark-frontmatter');
+var frontmatter = require("remark-frontmatter");
 
 const defaults = {
   children(node) {
@@ -24,7 +24,7 @@ const defaults = {
 function build(text, options = defaults) {
   const processor = unified()
     .use(remarkparse, options.remarkoptions)
-    .use(frontmatter, ['yaml','toml']);
+    .use(frontmatter, ["yaml","toml"]);
   return annotatedtext.build(text, processor.parse, options);
 }
 
