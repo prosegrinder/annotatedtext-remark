@@ -1,0 +1,297 @@
+{
+  "annotation": [
+    {
+      "markup": "---\ntitle: frontmatter\nsubject: testing\nspecies: unknown\n---\n# ",
+      "interpretAs": "\n\n\n\n\n",
+      "offset": {
+        "start": 0,
+        "end": 63
+      }
+    },
+    {
+      "text": "ATFB",
+      "offset": {
+        "start": 63,
+        "end": 67
+      }
+    },
+    {
+      "markup": "\n\n",
+      "interpretAs": "\n\n",
+      "offset": {
+        "start": 67,
+        "end": 69
+      }
+    },
+    {
+      "text": "Annotated Text Format Builder (ATFB) is a JavaScript module for converting various\ntext formats to an annotated text format suitable for processing by the LanguageTool server.",
+      "offset": {
+        "start": 69,
+        "end": 244
+      }
+    },
+    {
+      "markup": "\n\n",
+      "interpretAs": "\n\n",
+      "offset": {
+        "start": 244,
+        "end": 246
+      }
+    },
+    {
+      "text": "This is just a playground for a proof of concent and may move to a better home if it looks useful.",
+      "offset": {
+        "start": 246,
+        "end": 344
+      }
+    },
+    {
+      "markup": "\n\n## ",
+      "interpretAs": "\n\n",
+      "offset": {
+        "start": 344,
+        "end": 349
+      }
+    },
+    {
+      "text": "History",
+      "offset": {
+        "start": 349,
+        "end": 356
+      }
+    },
+    {
+      "markup": "\n\n[",
+      "interpretAs": "\n\n",
+      "offset": {
+        "start": 356,
+        "end": 359
+      }
+    },
+    {
+      "text": "LanguageTool",
+      "offset": {
+        "start": 359,
+        "end": 371
+      }
+    },
+    {
+      "markup": "](https://languagetool.org)",
+      "interpretAs": "",
+      "offset": {
+        "start": 371,
+        "end": 398
+      }
+    },
+    {
+      "text": " is an ",
+      "offset": {
+        "start": 398,
+        "end": 405
+      }
+    },
+    {
+      "markup": "**",
+      "interpretAs": "",
+      "offset": {
+        "start": 405,
+        "end": 407
+      }
+    },
+    {
+      "text": "excellent",
+      "offset": {
+        "start": 407,
+        "end": 416
+      }
+    },
+    {
+      "markup": "**",
+      "interpretAs": "",
+      "offset": {
+        "start": 416,
+        "end": 418
+      }
+    },
+    {
+      "text": " open source spell and grammar checker. It's\nbeing integrated into more and more IDEs so that developers can leverage it alongside their other\ntools. However, LanguageTool's creator has explicitly stated, ",
+      "offset": {
+        "start": 418,
+        "end": 623
+      }
+    },
+    {
+      "markup": "[",
+      "interpretAs": "",
+      "offset": {
+        "start": 623,
+        "end": 624
+      }
+    },
+    {
+      "text": "\"LT only works on plain text, so you'll need to either convert Markdown to plain text first, or tell LT what the markup is.\"",
+      "offset": {
+        "start": 624,
+        "end": 748
+      }
+    },
+    {
+      "markup": "](https://forum.languagetool.org/t/rules-for-markdown/374/2)",
+      "interpretAs": "",
+      "offset": {
+        "start": 748,
+        "end": 808
+      }
+    },
+    {
+      "text": " Pretty clear.",
+      "offset": {
+        "start": 808,
+        "end": 822
+      }
+    },
+    {
+      "markup": "\n\n",
+      "interpretAs": "\n\n",
+      "offset": {
+        "start": 822,
+        "end": 824
+      }
+    },
+    {
+      "text": "Tdhis makes perfect sense. LanguageTool is meant to parse and analyze natural languages, not computer languages.",
+      "offset": {
+        "start": 824,
+        "end": 936
+      }
+    },
+    {
+      "markup": "\n\n## ",
+      "interpretAs": "\n\n",
+      "offset": {
+        "start": 936,
+        "end": 941
+      }
+    },
+    {
+      "text": "Goals",
+      "offset": {
+        "start": 941,
+        "end": 946
+      }
+    },
+    {
+      "markup": "\n\n",
+      "interpretAs": "\n\n",
+      "offset": {
+        "start": 946,
+        "end": 948
+      }
+    },
+    {
+      "text": "So what are the goals here? Glad you asked:",
+      "offset": {
+        "start": 948,
+        "end": 991
+      }
+    },
+    {
+      "markup": "\n\n* ",
+      "interpretAs": "\n\n",
+      "offset": {
+        "start": 991,
+        "end": 995
+      }
+    },
+    {
+      "text": "Create a simple, lightweight parser in JavaScript.",
+      "offset": {
+        "start": 995,
+        "end": 1045
+      }
+    },
+    {
+      "markup": "\n* ",
+      "interpretAs": "\n",
+      "offset": {
+        "start": 1045,
+        "end": 1048
+      }
+    },
+    {
+      "text": "Be portable across editors that leverage JavaScript in their plugins.",
+      "offset": {
+        "start": 1048,
+        "end": 1117
+      }
+    },
+    {
+      "markup": "\n* ",
+      "interpretAs": "\n",
+      "offset": {
+        "start": 1117,
+        "end": 1120
+      }
+    },
+    {
+      "text": "Map various formatting languages to the simple Annotated Text format described in LanguageTool's API.",
+      "offset": {
+        "start": 1120,
+        "end": 1221
+      }
+    },
+    {
+      "markup": "\n* ",
+      "interpretAs": "\n",
+      "offset": {
+        "start": 1221,
+        "end": 1224
+      }
+    },
+    {
+      "text": "Use this readme as a test document.",
+      "offset": {
+        "start": 1224,
+        "end": 1259
+      }
+    },
+    {
+      "markup": "\n\n",
+      "interpretAs": "\n\n",
+      "offset": {
+        "start": 1259,
+        "end": 1261
+      }
+    },
+    {
+      "text": "Oh, and because we shouldn't assume the text ends with text, here's a link to one of my favorite quotes by Socrates:\n",
+      "offset": {
+        "start": 1261,
+        "end": 1378
+      }
+    },
+    {
+      "markup": "[",
+      "interpretAs": "",
+      "offset": {
+        "start": 1378,
+        "end": 1379
+      }
+    },
+    {
+      "text": "\"I am the wisest man alive, for I know one thing, and that is that I know nothing.\"",
+      "offset": {
+        "start": 1379,
+        "end": 1462
+      }
+    },
+    {
+      "markup": "](https://www.brainyquote.com/quotes/socrates_125872)\n",
+      "interpretAs": "\n",
+      "offset": {
+        "start": 1462,
+        "end": 1516
+      }
+    }
+  ]
+}
