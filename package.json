@@ -1,6 +1,6 @@
 {
   "name": "annotatedtext-remark",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "A lightweight JavaScript library based on annotatedtext and remark-parse for converting markdown documents into an annotated text format consumable by LanguageTool as AnnotatedText.",
   "main": "index.js",
   "scripts": {
@@ -23,6 +23,7 @@
   "homepage": "https://github.com/prosegrinder/annotatedtext-remark#readme",
   "dependencies": {
     "annotatedtext": "^0.1.1",
+    "remark-frontmatter": "^1.3.2",
     "remark-parse": "^7.0.1",
     "unified": "^8.4.1"
   },
