@@ -13,8 +13,15 @@ const defaults = {
     return annotatedtext.defaults.annotatetextnode(node);
   },
   interpretmarkup(text = "") {
-    let count = (text.match(/\n/g) || []).length;
-    return "\n".repeat(count);
+    let interpretation = "";
+    if (text.match(/^(?!\s*`{3})\s*`{1,2}/)) {
+      // interpretation = text.replace(/^`{1,2}/,"").replace(/`{1,2}$/,"")
+      interpretation = text.replace(/`/g,"'")
+    } else {
+      let count = (text.match(/\n/g) || []).length;
+      interpretation = "\n".repeat(count);
+    }
+    return interpretation;
   },
   remarkoptions: {
     commonmark: true
