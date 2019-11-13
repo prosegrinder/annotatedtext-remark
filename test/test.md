@@ -22,5 +22,27 @@ So what are the goals here? Glad you asked:
 * Map various formatting languages to the simple Annotated Text format described in LanguageTool's API.
 * Use this readme as a test document.
 
+## Specific Test Cases
+
+### Inline Code
+
+There seems to be an issue with `inline code` not showing up as text.
+
+Here’s another text case, such as `Mesh`.
+
+And what about ``double ticks``?
+
+``And what about `ticks` within double ticks?``
+
+### Code Blocks
+
+```bash
+I wonder how
+code blocks
+show up?
+```
+
+## The End
+
 Oh, and because we shouldn't assume the text ends with text, here's a link to one of my favorite quotes by Socrates:
 ["I am the wisest man alive, for I know one thing, and that is that I know nothing."](https://www.brainyquote.com/quotes/socrates_125872)
