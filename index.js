@@ -17,7 +17,7 @@ const defaults = {
     // Treat inline code as text
     if (text.match(/^(?!\s*`{3})\s*`{1,2}/)) {
       // Replace with single quotes to avoid tiggering EN_QUOTES
-      interpretation = text.replace(/`/g,"'")
+      interpretation = text.replace(/`/g,"'");
     } else {
       let count = (text.match(/\n/g) || []).length;
       interpretation = "\n".repeat(count);
