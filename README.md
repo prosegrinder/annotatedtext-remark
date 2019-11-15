@@ -9,7 +9,7 @@ Front matter is now tagged as markup.
 
 ## Usage
 
-### `build(text, parse, options = defaults)`
+### `build(text, options = defaults)`
 
 Returns Annotated Text as described by LanguageTool's API:
 
@@ -50,8 +50,16 @@ const defaults = {
     return annotatedtext.defaults.annotatetextnode(node);
   },
   interpretmarkup(text = "") {
-    let count = (text.match(/\n/g) || []).length;
-    return "\n".repeat(count);
+    let interpretation = "";
+    // Treat inline code as text
+    if (text.match(/^(?!\s*`{3})\s*`{1,2}/)) {
+      // Replace with single quotes to avoid tiggering EN_QUOTES
+      interpretation = text.replace(/`/g,"'");
+    } else {
+      let count = (text.match(/\n/g) || []).length;
+      interpretation = "\n".repeat(count);
+    }
+    return interpretation;
   },
   remarkoptions: {
     commonmark: true
