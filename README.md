@@ -9,7 +9,7 @@ Front matter is now tagged as markup.
 
 ## Usage
 
-### `build(text, parse, options = defaults)`
+### `build(text, options = defaults)`
 
 Returns Annotated Text as described by LanguageTool's API:
 
