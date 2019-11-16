@@ -50,16 +50,8 @@ const defaults = {
     return annotatedtext.defaults.annotatetextnode(node);
   },
   interpretmarkup(text = "") {
-    let interpretation = "";
-    // Treat inline code as text
-    if (text.match(/^(?!\s*`{3})\s*`{1,2}/)) {
-      // Replace with single quotes to avoid tiggering EN_QUOTES
-      interpretation = text.replace(/`/g,"'");
-    } else {
-      let count = (text.match(/\n/g) || []).length;
-      interpretation = "\n".repeat(count);
-    }
-    return interpretation;
+    let count = (text.match(/\n/g) || []).length;
+    return "\n".repeat(count);
   },
   remarkoptions: {
     commonmark: true

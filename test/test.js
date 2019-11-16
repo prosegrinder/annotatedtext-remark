@@ -48,25 +48,25 @@ describe("#build()", function () {
     expect(result).to.equal(expected);
   });
 
-  // Backtick Test Case
-  it("should return the expected annotated text object with backticks", function () {
-    const expected = JSON.parse(fs.readFileSync("./test/annotatedtext-backticks.json", "utf8"));
-    const text = fs.readFileSync("./test/test-backticks.md", "utf8");
-    const result = builder.build(text);
-    // fs.writeFileSync("./test/annotatedtext-backticks-tmp.json", JSON.stringify(result, null, 2));
-    expect(result).to.deep.equal(expected);
-  });
+  // // Backtick Test Case
+  // it("should return the expected annotated text object with backticks", function () {
+  //   const expected = JSON.parse(fs.readFileSync("./test/annotatedtext-backticks.json", "utf8"));
+  //   const text = fs.readFileSync("./test/test-backticks.md", "utf8");
+  //   const result = builder.build(text);
+  //   // fs.writeFileSync("./test/annotatedtext-backticks-tmp.json", JSON.stringify(result, null, 2));
+  //   expect(result).to.deep.equal(expected);
+  // });
 
-  it("should match the original document exactly with backticks", function () {
-    const expected = fs.readFileSync("./test/test-backticks.md", "utf8");
-    const annotatedtext = builder.build(expected);
-    const annotation = annotatedtext.annotation;
-    let result = "";
-    for (let node of annotation) {
-      const text = node.text ? node.text : node.markup;
-      result += text;
-    }
-    expect(result).to.equal(expected);
-  });
+  // it("should match the original document exactly with backticks", function () {
+  //   const expected = fs.readFileSync("./test/test-backticks.md", "utf8");
+  //   const annotatedtext = builder.build(expected);
+  //   const annotation = annotatedtext.annotation;
+  //   let result = "";
+  //   for (let node of annotation) {
+  //     const text = node.text ? node.text : node.markup;
+  //     result += text;
+  //   }
+  //   expect(result).to.equal(expected);
+  // });
 
 });
