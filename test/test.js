@@ -48,4 +48,25 @@ describe("#build()", function () {
     expect(result).to.equal(expected);
   });
 
+  // Escape Character Test Case
+  it("should return the expected annotated text object with the escape character", function () {
+    const expected = JSON.parse(fs.readFileSync("./test/escape-character.json", "utf8"));
+    const text = fs.readFileSync("./test/escape-character.md", "utf8");
+    const result = builder.build(text);
+    // fs.writeFileSync("./test/escape-character-tmp.json", JSON.stringify(result, null, 2));
+    expect(result).to.deep.equal(expected);
+  });
+
+  it("should match the original document exactly with the escape character", function () {
+    const expected = fs.readFileSync("./test/escape-character.md", "utf8");
+    const annotatedtext = builder.build(expected);
+    const annotation = annotatedtext.annotation;
+    let result = "";
+    for (let node of annotation) {
+      const text = node.text ? node.text : node.markup;
+      result += text;
+    }
+    expect(result).to.equal(expected);
+  });
+
 });
