@@ -9,8 +9,8 @@ const defaults = {
   children(node) {
     return annotatedtext.defaults.children(node);
   },
-  annotatetextnode(node) {
-    return annotatedtext.defaults.annotatetextnode(node);
+  annotatetextnode(node, text) {
+    return annotatedtext.defaults.annotatetextnode(node, text);
   },
   interpretmarkup(text = "") {
     let count = (text.match(/\n/g) || []).length;
