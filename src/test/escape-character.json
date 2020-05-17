@@ -1,0 +1,162 @@
+{
+  "annotation": [
+    {
+      "interpretAs": "",
+      "markup": "# ",
+      "offset": {
+        "end": 2,
+        "start": 0
+      }
+    },
+    {
+      "offset": {
+        "end": 46,
+        "start": 2
+      },
+      "text": "Backslash + Special Char = Shifted Highlight"
+    },
+    {
+      "interpretAs": "\n\n",
+      "markup": "\n\n",
+      "offset": {
+        "end": 48,
+        "start": 46
+      }
+    },
+    {
+      "offset": {
+        "end": 78,
+        "start": 48
+      },
+      "text": "This is a inccoreect sentence."
+    },
+    {
+      "interpretAs": "\n\n",
+      "markup": "\n\n",
+      "offset": {
+        "end": 80,
+        "start": 78
+      }
+    },
+    {
+      "offset": {
+        "end": 101,
+        "start": 80
+      },
+      "text": "Here is the culprit: "
+    },
+    {
+      "interpretAs": "",
+      "markup": "",
+      "offset": {
+        "end": 101,
+        "start": 101
+      }
+    },
+    {
+      "offset": {
+        "end": 103,
+        "start": 101
+      },
+      "text": "\\-"
+    },
+    {
+      "interpretAs": "",
+      "markup": "",
+      "offset": {
+        "end": 103,
+        "start": 103
+      }
+    },
+    {
+      "offset": {
+        "end": 104,
+        "start": 103
+      },
+      "text": "."
+    },
+    {
+      "interpretAs": "\n\n",
+      "markup": "\n\n",
+      "offset": {
+        "end": 106,
+        "start": 104
+      }
+    },
+    {
+      "offset": {
+        "end": 142,
+        "start": 106
+      },
+      "text": "This is annother incorrect sentence."
+    },
+    {
+      "interpretAs": "\n\n",
+      "markup": "\n\n",
+      "offset": {
+        "end": 144,
+        "start": 142
+      }
+    },
+    {
+      "offset": {
+        "end": 172,
+        "start": 144
+      },
+      "text": "Here is another culprit: \\;."
+    },
+    {
+      "interpretAs": "\n\n",
+      "markup": "\n\n",
+      "offset": {
+        "end": 174,
+        "start": 172
+      }
+    },
+    {
+      "offset": {
+        "end": 210,
+        "start": 174
+      },
+      "text": "This is annother incorrect sentence."
+    },
+    {
+      "interpretAs": "\n\n",
+      "markup": "\n\n* ",
+      "offset": {
+        "end": 214,
+        "start": 210
+      }
+    },
+    {
+      "offset": {
+        "end": 234,
+        "start": 214
+      },
+      "text": "Is this yet another?"
+    },
+    {
+      "interpretAs": "\n\n",
+      "markup": "\n\n",
+      "offset": {
+        "end": 236,
+        "start": 234
+      }
+    },
+    {
+      "offset": {
+        "end": 272,
+        "start": 236
+      },
+      "text": "This is annother incorrect sentence."
+    },
+    {
+      "interpretAs": "\n",
+      "markup": "\n",
+      "offset": {
+        "end": 273,
+        "start": 272
+      }
+    }
+  ]
+}
