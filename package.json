@@ -22,7 +22,7 @@
   },
   "homepage": "https://github.com/prosegrinder/annotatedtext-remark#readme",
   "dependencies": {
-    "annotatedtext": "^0.2.0",
+    "annotatedtext": "^0.5.0",
     "remark-frontmatter": "^2.0.0",
     "remark-parse": "^8.0.0",
     "unified": "^9.0.0"
