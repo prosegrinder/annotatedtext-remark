@@ -26,11 +26,8 @@ const defaults = {
 function build(text: string, options: IOptions = defaults) {
   const processor = unified()
     .use(remarkparse, options.remarkoptions)
-    .use(frontmatter, ["yaml","toml"]);
+    .use(frontmatter, ["yaml", "toml"]);
   return annotatedtext.build(text, processor.parse, options);
 }
 
-export {
-  build,
-  defaults,
-};
+export { build, defaults };
