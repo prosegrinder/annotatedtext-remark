@@ -1,0 +1,16 @@
+version: 2
+updates:
+- package-ecosystem: npm
+  directory: "/"
+  schedule:
+    interval: monthly
+    time: "17:00"
+    timezone: America/New_York
+  open-pull-requests-limit: 10
+  reviewers:
+  - davidlday
+  ignore:
+  - dependency-name: mocha
+    versions:
+    - "> 6.2.1"
+    - "< 6.3"
