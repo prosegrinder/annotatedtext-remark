@@ -18,10 +18,10 @@ jobs:
           registry-url: https://registry.npmjs.org/
       - run: npm ci
       - run: npm run build --if-present
+      - run: npm test
       - run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_ACCESS_TOKEN}}
-
 #   publish-gpr:
 #     needs: build
 #     runs-on: ubuntu-latest
