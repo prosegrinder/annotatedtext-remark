@@ -19,9 +19,6 @@ const defaults = {
   },
   // Defaults from remark-parse
   remarkoptions: {
-    emitParseErrors: false,
-    gfm: true,
-    commonmark: false,
     blocks: [
       "address",
       "article",
@@ -90,6 +87,9 @@ const defaults = {
       "track",
       "ul",
     ],
+    commonmark: false,
+    emitParseErrors: false,
+    gfm: true,
     pedantic: false,
   },
 };
