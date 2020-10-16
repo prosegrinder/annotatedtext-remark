@@ -1,21 +1,24 @@
 import * as annotatedtext from "annotatedtext";
+import * as remarkparse from "remark-parse";
 
 declare namespace annotatedtextremark {
-
   export interface IOptions {
-    remarkoptions: any;
-    children(node: any): any;
-    annotatetextnode(node: any, text: string): annotatedtext.IAnnotation | null;
+    remarkoptions: remarkparse.RemarkParseOptions;
+    children(node: annotatedtext.INode): annotatedtext.INode[];
+    annotatetextnode(
+      node: annotatedtext.INode,
+      text: string,
+    ): annotatedtext.IAnnotation | null;
     interpretmarkup(text?: string): string;
   }
 
   export const defaults: IOptions;
 
   export function collecttextnodes(
-    ast: any,
+    ast: unknown,
     text: string,
     options?: IOptions,
-  ): any[];
+  ): annotatedtext.IAnnotation[];
 
   export function composeannotation(
     text: string,
@@ -25,7 +28,7 @@ declare namespace annotatedtextremark {
 
   export function build(
     text: string,
-    parse: any,
+    parse: unknown,
     options?: IOptions,
   ): annotatedtext.IAnnotatedtext;
 }
