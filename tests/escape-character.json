@@ -40,40 +40,10 @@
     },
     {
       "offset": {
-        "end": 101,
+        "end": 104,
         "start": 80
       },
-      "text": "Here is the culprit: "
-    },
-    {
-      "interpretAs": "",
-      "markup": "",
-      "offset": {
-        "end": 101,
-        "start": 101
-      }
-    },
-    {
-      "offset": {
-        "end": 103,
-        "start": 101
-      },
-      "text": "\\-"
-    },
-    {
-      "interpretAs": "",
-      "markup": "",
-      "offset": {
-        "end": 103,
-        "start": 103
-      }
-    },
-    {
-      "offset": {
-        "end": 104,
-        "start": 103
-      },
-      "text": "."
+      "text": "Here is the culprit: \\-."
     },
     {
       "interpretAs": "\n\n",
