@@ -13,7 +13,10 @@ describe("#build()", function () {
     );
     const text = fs.readFileSync("./tests/test-original.md", "utf8");
     const result = builder.build(text);
-    // fs.writeFileSync("./tests/annotatedtext-original-tmp.json", JSON.stringify(result, null, 2));
+    // fs.writeFileSync(
+    //   "./out/annotatedtext-original.json",
+    //   JSON.stringify(result, null, 2),
+    // );
     expect(result).to.deep.equal(expected);
   });
 
@@ -36,7 +39,10 @@ describe("#build()", function () {
     );
     const text = fs.readFileSync("./tests/test-frontmatter.md", "utf8");
     const result = builder.build(text);
-    // fs.writeFileSync("./tests/annotatedtext-frontmatter-tmp.json", JSON.stringify(result, null, 2));
+    // fs.writeFileSync(
+    //   "./out/annotatedtext-frontmatter.json",
+    //   JSON.stringify(result, null, 2),
+    // );
     expect(result).to.deep.equal(expected);
   });
 
@@ -59,7 +65,10 @@ describe("#build()", function () {
     );
     const text = fs.readFileSync("./tests/escape-character.md", "utf8");
     const result = builder.build(text);
-    // fs.writeFileSync("./tests/escape-character-tmp.json", JSON.stringify(result, null, 2));
+    // fs.writeFileSync(
+    //   "./out/escape-character.json",
+    //   JSON.stringify(result, null, 2),
+    // );
     expect(result).to.deep.equal(expected);
   });
 
