@@ -3,7 +3,7 @@ import * as remarkparse from "remark-parse";
 
 declare namespace annotatedtextremark {
   export interface IOptions {
-    remarkoptions: remarkparse.RemarkParseOptions;
+    remarkoptions: remarkparse.Options;
     children(node: annotatedtext.INode): annotatedtext.INode[];
     annotatetextnode(
       node: annotatedtext.INode,
