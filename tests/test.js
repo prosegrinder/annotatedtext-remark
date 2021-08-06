@@ -1,9 +1,9 @@
-/* eslint-disable @typescript-eslint/no-var-requires */
-"use strict";
-
-var expect = require("chai").expect;
-var builder = require("../out/index");
-var fs = require("fs");
+// var expect = require("chai").expect;
+import chai from chai;
+// var builder = require("../out/index");
+import * as builder from "../out/index.js";
+// var fs = require("fs");
+import fs from "fs";
 
 describe("#build()", function () {
   // Original Test Case
@@ -17,7 +17,7 @@ describe("#build()", function () {
     //   "./out/annotatedtext-original.json",
     //   JSON.stringify(result, null, 2),
     // );
-    expect(result).to.deep.equal(expected);
+    chai.expect(result).to.deep.equal(expected);
   });
 
   it("should match the original document exactly", function () {
@@ -29,7 +29,7 @@ describe("#build()", function () {
       const text = node.text ? node.text : node.markup;
       result += text;
     }
-    expect(result).to.equal(expected);
+    chai.expect(result).to.equal(expected);
   });
 
   // Frontmatter Test Case
@@ -43,7 +43,7 @@ describe("#build()", function () {
     //   "./out/annotatedtext-frontmatter.json",
     //   JSON.stringify(result, null, 2),
     // );
-    expect(result).to.deep.equal(expected);
+    chai.expect(result).to.deep.equal(expected);
   });
 
   it("should match the original document exactly with frontmatter", function () {
@@ -55,7 +55,7 @@ describe("#build()", function () {
       const text = node.text ? node.text : node.markup;
       result += text;
     }
-    expect(result).to.equal(expected);
+    chai.expect(result).to.equal(expected);
   });
 
   // Escape Character Test Case
@@ -69,7 +69,7 @@ describe("#build()", function () {
     //   "./out/escape-character.json",
     //   JSON.stringify(result, null, 2),
     // );
-    expect(result).to.deep.equal(expected);
+    chai.expect(result).to.deep.equal(expected);
   });
 
   it("should match the original document exactly with the escape character", function () {
@@ -81,6 +81,6 @@ describe("#build()", function () {
       const text = node.text ? node.text : node.markup;
       result += text;
     }
-    expect(result).to.equal(expected);
+    chai.expect(result).to.equal(expected);
   });
 });
