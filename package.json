@@ -33,7 +33,7 @@
   "dependencies": {
     "annotatedtext": "^0.7.0",
     "remark-frontmatter": "^3.0.0",
-    "remark-parse": "^9.0.0",
+    "remark-parse": "^10.0.0",
     "unified": "^9.0.0"
   },
   "devDependencies": {
