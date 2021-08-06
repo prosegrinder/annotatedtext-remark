@@ -1,8 +1,5 @@
-// var expect = require("chai").expect;
 import chai from chai;
-// var builder = require("../out/index");
 import * as builder from "../out/index.js";
-// var fs = require("fs");
 import fs from "fs";
 
 describe("#build()", function () {
