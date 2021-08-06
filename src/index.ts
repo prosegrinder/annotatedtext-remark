@@ -1,7 +1,7 @@
 import * as annotatedtext from "annotatedtext";
-import * as frontmatter from "remark-frontmatter";
-import * as remarkparse from "remark-parse";
-import * as unified from "unified";
+import frontmatter from "remark-frontmatter";
+import remarkparse from "remark-parse";
+import { unified } from "unified";
 import { IOptions } from "../types";
 
 const defaults = {
