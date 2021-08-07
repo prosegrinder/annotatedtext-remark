@@ -1,36 +1,29 @@
-import * as annotatedtext from "annotatedtext";
-import * as remarkparse from "remark-parse";
+import type { INode, IAnnotation, IAnnotatedtext } from "annotatedtext";
+import type { Options } from "remark-parse";
 
-declare namespace annotatedtextremark {
-  export interface IOptions {
-    remarkoptions: remarkparse.Options;
-    children(node: annotatedtext.INode): annotatedtext.INode[];
-    annotatetextnode(
-      node: annotatedtext.INode,
-      text: string,
-    ): annotatedtext.IAnnotation | null;
-    interpretmarkup(text?: string): string;
-  }
-
-  export const defaults: IOptions;
-
-  export function collecttextnodes(
-    ast: unknown,
-    text: string,
-    options?: IOptions,
-  ): annotatedtext.IAnnotation[];
-
-  export function composeannotation(
-    text: string,
-    annotatedtextnodes: annotatedtext.IAnnotatedtext,
-    options?: IOptions,
-  ): annotatedtext.IAnnotatedtext;
-
-  export function build(
-    text: string,
-    parse: unknown,
-    options?: IOptions,
-  ): annotatedtext.IAnnotatedtext;
+export interface IOptions {
+  remarkoptions: Options;
+  children(node: INode): INode[];
+  annotatetextnode(node: INode, text: string): IAnnotation | null;
+  interpretmarkup(text?: string): string;
 }
 
-export = annotatedtextremark;
+export const defaults: IOptions;
+
+export function collecttextnodes(
+  ast: unknown,
+  text: string,
+  options?: IOptions,
+): IAnnotation[];
+
+export function composeannotation(
+  text: string,
+  annotatedtextnodes: IAnnotatedtext,
+  options?: IOptions,
+): IAnnotatedtext;
+
+export function build(
+  text: string,
+  parse: unknown,
+  options?: IOptions,
+): IAnnotatedtext;
