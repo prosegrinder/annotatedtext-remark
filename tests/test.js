@@ -1,4 +1,4 @@
-import chai from chai;
+import chai from "chai";
 import * as builder from "../out/index.js";
 import fs from "fs";
 
