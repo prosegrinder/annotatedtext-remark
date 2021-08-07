@@ -13,7 +13,19 @@ LanguageTool as
 
 Front matter is now tagged as markup.
 
-## Usage
+## Install
+
+**This package is
+[ESM only](https://gist.github.com/sindresorhus/a39789f98801d908bbc7ff3ecc99d99c).**
+Node 12+ is needed to use it, and it must be `import`ed instead of `require`d.
+
+[npm](https://docs.npmjs.com/cli/install):
+
+```bash
+npm install annotatedtext-remark
+```
+
+## Use
 
 ### `build(text, options = defaults)`
 
@@ -34,10 +46,7 @@ Run the object through `JSON.stringfy()` to get a string suitable for passing to
 LanguageTool's `data` parameter.
 
 ```js
-"use strict";
-
-var builder = require("annotatedtext-remark");
-
+import * as builder from "annotatedtext-remark";
 const annotatedtext = builder.build(text);
 var ltdata = JSON.stringify(annotatedtext);
 ```
