@@ -3,9 +3,11 @@
   "version": "1.0.0",
   "description": "A lightweight JavaScript library based on annotatedtext and remark-parse for converting markdown documents into an annotated text format consumable by LanguageTool as AnnotatedText.",
   "type": "module",
+  "engines": {
+    "node": "^12.20.0 || ^14.13.1 || >=16.0.0"
+  },
   "exports": "./out/index.js",
   "types": "types/index.d.ts",
-  "node": "^12.20.0 || ^14.13.1 || >=16.0.0",
   "files": [
     "out/**/*",
     "types/index.d.ts"
