@@ -1,11 +1,10 @@
 # annotatedtext-remark
 
-[![Node.js CI](https://github.com/prosegrinder/annotatedtext-remark/workflows/Node.js%20CI/badge.svg?branch=master)](https://github.com/prosegrinder/annotatedtext-remark/actions?query=workflow%3A%22Node.js+CI%22+branch%3Amaster)
-[![ESLint](https://github.com/prosegrinder/annotatedtext-remark/workflows/ESLint/badge.svg)](https://github.com/prosegrinder/annotatedtext-remark/actions?query=workflow%3AESLint)
+[![Node.js CI](https://github.com/prosegrinder/annotatedtext-remark/workflows/Node.js%20CI/badge.svg?branch=main)](https://github.com/prosegrinder/annotatedtext-remark/actions?query=workflow%3A%22Node.js+CI%22+branch%3Amain)
 
 A lightweight JavaScript library based on
 [annotatedtext](https://github.com/prosegrinder/annotatedtext),
-[remark-parse](https://github.com/remarkjs/remark/tree/master/packages/remark-parse),
+[remark-parse](https://github.com/remarkjs/remark/tree/main/packages/remark-parse),
 and [remark-frontmatter](https://github.com/remarkjs/remark-frontmatter) for
 converting markdown documents into an annotated text format consumable by
 LanguageTool as
@@ -76,9 +75,9 @@ const defaults = {
 };
 ```
 
-Functions can be overriden by making a copy and assigning a new function. For
+Functions can be overridden by making a copy and assigning a new function. For
 example, the tests use markdown and need to interpret new lines in the markup as
-new lines. The interpretmarkup function is overriden as:
+new lines. The interpretmarkup function is overridden as:
 
 ```js
 var options = builder.defaults;
