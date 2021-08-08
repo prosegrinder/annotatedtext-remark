@@ -75,9 +75,9 @@ const defaults = {
 };
 ```
 
-Functions can be overriden by making a copy and assigning a new function. For
+Functions can be overridden by making a copy and assigning a new function. For
 example, the tests use markdown and need to interpret new lines in the markup as
-new lines. The interpretmarkup function is overriden as:
+new lines. The interpretmarkup function is overridden as:
 
 ```js
 var options = builder.defaults;
