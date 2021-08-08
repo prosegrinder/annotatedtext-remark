@@ -1,7 +1,6 @@
 # annotatedtext-remark
 
 [![Node.js CI](https://github.com/prosegrinder/annotatedtext-remark/workflows/Node.js%20CI/badge.svg?branch=master)](https://github.com/prosegrinder/annotatedtext-remark/actions?query=workflow%3A%22Node.js+CI%22+branch%3Amaster)
-[![ESLint](https://github.com/prosegrinder/annotatedtext-remark/workflows/ESLint/badge.svg)](https://github.com/prosegrinder/annotatedtext-remark/actions?query=workflow%3AESLint)
 
 A lightweight JavaScript library based on
 [annotatedtext](https://github.com/prosegrinder/annotatedtext),
