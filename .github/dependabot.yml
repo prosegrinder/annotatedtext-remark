@@ -14,3 +14,12 @@ updates:
     versions:
     - "> 6.2.1"
     - "< 6.3"
+- package-ecosystem: "github-actions"
+  directory: "/"
+  schedule:
+    interval: monthly
+    time: "17:00"
+    timezone: America/New_York
+  open-pull-requests-limit: 10
+  reviewers:
+  - davidlday
