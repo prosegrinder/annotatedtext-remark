@@ -1,6 +1,6 @@
 {
   "name": "annotatedtext-remark",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A lightweight JavaScript library based on annotatedtext and remark-parse for converting markdown documents into an annotated text format consumable by LanguageTool as AnnotatedText.",
   "type": "module",
   "engines": {
