@@ -36,7 +36,7 @@
   "homepage": "https://github.com/prosegrinder/annotatedtext-remark#readme",
   "dependencies": {
     "annotatedtext": "^1.0.5",
-    "remark-frontmatter": "^4.0.1",
+    "remark-frontmatter": "^5.0.0",
     "remark-parse": "^10.0.1",
     "unified": "^10.1.2"
   },
