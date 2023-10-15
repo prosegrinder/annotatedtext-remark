@@ -1,11 +1,20 @@
 name: Node.js CI
 
-on: pull_request
+on:
+  pull_request:
 
 concurrency:
   group: ci-${{ github.ref }}
   cancel-in-progress: true
 
 jobs:
-  npm-ci:
-    uses: prosegrinder/.github/.github/workflows/npm-ci.yaml@main
+  lint:
+    uses: prosegrinder/.github/.github/workflows/npm-lint.yaml@main
+
+  test:
+    needs: lint
+    uses: prosegrinder/.github/.github/workflows/npm-test.yaml@main
+
+  cz-dry-run:
+    needs: test
+    uses: prosegrinder/.github/.github/workflows/cz-dry-run.yaml@main
