@@ -1,3 +1,12 @@
+## v1.0.8 (2023-10-22)
+
+### Fix
+
+- update annotatedtext to 1.2.0 (#385)
+- **deps**: bump remark-frontmatter to 5.0.0
+- use compose() instead of build()
+- **deps**: bump annotatedtext to 1.2.0
+
 ## v1.0.7 - (2022-12-12)
 
 ### Fix
