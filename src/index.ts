@@ -25,10 +25,11 @@ function build(
   text: string,
   options: IOptions = defaults,
 ): annotatedtext.IAnnotatedtext {
-  const processor = unified()
+  const nodes = unified()
     .use(remarkparse, options.remarkoptions)
-    .use(frontmatter, ["yaml", "toml"]);
-  return annotatedtext.build(text, processor.parse, options);
+    .use(frontmatter, ["yaml", "toml"])
+    .parse(text) as annotatedtext.INode;
+  return annotatedtext.compose(text, nodes, options);
 }
 
 export { build, defaults };
