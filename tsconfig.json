@@ -14,9 +14,11 @@
     "noImplicitReturns": true /* Report error when not all code paths in function return a value. */,
     "noFallthroughCasesInSwitch": true /* Report errors for fallthrough cases in switch statement. */
   },
-  "include": [
-    "types/index.d.ts",
-    // "src/.d.ts",
-    "src/index.ts"
-  ]
+  "include": ["types/index.d.ts", "src/index.ts"],
+  "typedocOptions": {
+    "entryPoints": ["types/index.d.ts"],
+    "sort": ["kind", "instance-first", "required-first", "alphabetical"],
+    "includeVersion": true,
+    "out": "docs"
+  }
 }
