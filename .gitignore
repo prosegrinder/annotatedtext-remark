@@ -65,3 +65,6 @@ typings/
 
 # Typescript
 out
+
+# Typedoc
+docs/
