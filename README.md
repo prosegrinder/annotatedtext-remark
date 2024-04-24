@@ -12,6 +12,11 @@ LanguageTool as
 
 Front matter is now tagged as markup.
 
+## Documentation
+
+For details, please see
+[https://www.prosegrinder.com/annotatedtext-remark](https://www.prosegrinder.com/annotatedtext-remark).
+
 ## Install
 
 **This package is
@@ -24,100 +29,15 @@ Node 12+ is needed to use it, and it must be `import`ed instead of `require`d.
 npm install annotatedtext-remark
 ```
 
-## Use
+## Usage
 
-### `build(text, options = defaults)`
+Use `build` to convert valid Markdown into
+[AnnotatedText](https://languagetool.org/development/api/org/languagetool/markup/AnnotatedText.html).
 
-Returns Annotated Text as described by LanguageTool's API:
+```javascript
+import { build } from "annotatedtext-remark";
 
-```json
-{
-  "annotation": [
-    { "text": "A " },
-    { "markup": "<b>" },
-    { "text": "test" },
-    { "markup": "</b>" }
-  ]
-}
+const text = "# Hello World\n\nThis is a paragraph.";
+const annotatedtext = build(text);
+const ltdata = JSON.stringify(annotatedtext);
 ```
-
-Run the object through `JSON.stringfy()` to get a string suitable for passing to
-LanguageTool's `data` parameter.
-
-```js
-import * as builder from "annotatedtext-remark";
-const annotatedtext = builder.build(text);
-var ltdata = JSON.stringify(annotatedtext);
-```
-
-- `text`: The text from the markup document in its original form.
-- _`options`_: (optional) See [`defaults`](#defaults).
-
-### `defaults`
-
-`annotatedtext-remark` uses following default functions used throughout.
-
-```js
-const defaults = {
-  children(node) {
-    return annotatedtext.defaults.children(node);
-  },
-  annotatetextnode(node) {
-    return annotatedtext.defaults.annotatetextnode(node);
-  },
-  interpretmarkup(text = "") {
-    let count = (text.match(/\n/g) || []).length;
-    return "\n".repeat(count);
-  },
-  remarkoptions: {
-    commonmark: true,
-  },
-};
-```
-
-Functions can be overridden by making a copy and assigning a new function. For
-example, the tests use markdown and need to interpret new lines in the markup as
-new lines. The interpretmarkup function is overridden as:
-
-```js
-var options = builder.defaults;
-options.interpretmarkup = function (text) {
-  let count = (text.match(/\n/g) || []).length;
-  return "\n".repeat(count);
-};
-```
-
-#### `children(node)`
-
-Expected to return an array of child nodes.
-
-#### `annotatetextnode(node)`
-
-Expected to return a structure for a text ast node with at least the following:
-
-- `text` is the natural language text from the node, devoid of all markup.
-- `offset` contains offsets used to extract markup text from the original
-  document.
-  - `start` is the offset start of the text
-  - `end` is the offset end of the text
-
-```json
-{
-  "text": "A snippet of the natural language text from the document.",
-  "offset": {
-    "start": 1,
-    "end": 57
-  }
-}
-```
-
-If the node is not a text node, it must return `null`;
-
-#### `interpretmarkup(node)`
-
-Used to make sure LanguageTool knows when markup represents some form of
-whitespace.
-
-## License
-
-[MIT](LICENSE) © David L. Day
