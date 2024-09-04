@@ -13,11 +13,21 @@ updates:
       include: scope
     reviewers:
       - davidlday
-    ignore:
-      - dependency-name: mocha
-        versions:
-          - "> 6.2.1"
-          - "< 6.3"
+    groups:
+      dev-typescript-eslint:
+        dependency-type: "development"
+        patterns:
+          - "@typescript-eslint/*"
+      dev-mocha:
+        dependency-type: "development"
+        patterns:
+          - "mocha"
+          - "@types/mocha"
+      dev-chai:
+        dependency-type: "development"
+        patterns:
+          - "chai"
+          - "@types/chai"
   - package-ecosystem: "github-actions"
     directory: "/"
     schedule:
