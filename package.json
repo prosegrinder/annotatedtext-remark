@@ -54,7 +54,7 @@
     "eslint-config-prettier": "^10.0.1",
     "eslint-plugin-jsdoc": "^50.2.2",
     "mocha": "^11.0.1",
-    "typedoc": "^0.27.3",
+    "typedoc": "^0.28.1",
     "typescript": "^5.3.3"
   }
 }
