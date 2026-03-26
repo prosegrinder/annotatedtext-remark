@@ -1,3 +1,10 @@
+## v1.0.11 (2026-03-26)
+
+### Fix
+
+- **deps**: bump picomatch from 4.0.3 to 4.0.4 (#632)
+- **deps**: bump diff from 5.2.0 to 5.2.2 (#619)
+
 ## v1.0.10 (2024-04-04)
 
 ### Fix
